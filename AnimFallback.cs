@@ -27,22 +27,6 @@ using fallbackRotationFrames = System.Collections.Generic.Dictionary<ushort, Dic
 
 namespace WolvenKit.Modkit.RED4
 {
-    public enum AnimFallbackCompression
-    {
-        Uncompressed,
-        //3x16bit w-stripped
-        Quat3x16bit,
-        //Fallback Frames (Medium)
-        //-- Pos --Vec3 uncompressed
-        //-- Rot - 16 * 4 x,y,z,w 
-        Quat4x16bit,
-        //Fallback Frames (High) 
-        //-- Pos = 10:10:12 x,y,z
-        Vec32_10bit
-        //Fallback Frames (High) 
-        //-- Rot = 3x16bit w-stripped
-        ///tbd
-    }
     public partial class ModTools
     {
         public Vector3 U32toVec3(uint u32)
